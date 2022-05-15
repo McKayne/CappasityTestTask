@@ -17,3 +17,9 @@
 
 #### Скриншоты
 ![Screenshot1](Screenshot1.jpg)
+![Screenshot2](Screenshot2.jpg)
+![Screenshot3](Screenshot3.jpg)
+![Screenshot4](Screenshot4.jpg)
+![Screenshot5](Screenshot5.jpg)
+![Screenshot6](Screenshot6.jpg)
+![Screenshot7](Screenshot7.jpg)
