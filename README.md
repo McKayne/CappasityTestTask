@@ -16,7 +16,7 @@
 2. Фоновые изображения городов подгружаются через Google Images с квотой 100 запросов в сутки, поэтому от интенсивного использования приложения фоновое изображение может переставать загружаться до следующего дня
 
 #### Скриншоты
-![Screenshot1](Screenshot1.jpg)
+![Screenshot](Screenshot.jpg)
 ![Screenshot2](Screenshot2.jpg)
 ![Screenshot3](Screenshot3.jpg)
 ![Screenshot4](Screenshot4.jpg)
