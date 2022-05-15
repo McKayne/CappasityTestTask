@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CappasityTestTask</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="select_city_fragment_label">Прогноз погоды</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="btn_add_city">Добавление города</string>
+    <string name="btn_city_hint">Введите название города</string>
+    <string name="btn_ok">ОК</string>
+
+    <string name="btn_select">Прогноз погоды</string>
+    <string name="btn_cancel">Отменить</string>
+
+    <string name="last_updated">Обновлено: %1$s</string>
+    <string name="confirmation">Вы действительно хотите удалить этот город из сохраненных?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="temperature">%1$.2f°C</string>
+    <string name="visibility">%1$d метров</string>
+    <string name="wind_speed">%1$.2f км/ч</string>
+    <string name="wind_deg">%1$.2f°</string>
+</resources>
