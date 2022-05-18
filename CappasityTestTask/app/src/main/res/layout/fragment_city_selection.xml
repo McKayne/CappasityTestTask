@@ -6,14 +6,14 @@
     <data>
         <variable
             name="CitySelectionViewModel"
-            type="com.el_nico.cappasitytesttask.viewmodels.CitySelectionViewModel" />
+            type="com.el_nico.cappasitytesttask.ui.cityselection.CitySelectionViewModel" />
     </data>
 
     <!--android:fitsSystemWindows="true"-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.cityselection.CitySelectionFragment">
+        tools:context=".ui.cityselection.CitySelectionFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

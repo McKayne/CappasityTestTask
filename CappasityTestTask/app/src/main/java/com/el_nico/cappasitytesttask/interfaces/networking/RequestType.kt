@@ -1,8 +1,8 @@
 package com.el_nico.cappasitytesttask.interfaces.networking
 
-import com.el_nico.cappasitytesttask.models.networking.forecast.ForecastResponse
-import com.el_nico.cappasitytesttask.models.networking.onecall.OneCallResponse
-import com.el_nico.cappasitytesttask.models.networking.weather.WeatherResponse
+import com.el_nico.cappasitytesttask.domain.entity.networking.forecast.ForecastResponse
+import com.el_nico.cappasitytesttask.domain.entity.networking.onecall.OneCallResponse
+import com.el_nico.cappasitytesttask.domain.entity.networking.weather.WeatherResponse
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.GET

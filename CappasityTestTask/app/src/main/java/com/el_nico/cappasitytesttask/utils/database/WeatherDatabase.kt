@@ -3,7 +3,6 @@ package com.el_nico.cappasitytesttask.utils.database
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import com.el_nico.cappasitytesttask.application.WeatherApplication
 import com.el_nico.cappasitytesttask.utils.database.tablecreation.createForecastTable
 import com.el_nico.cappasitytesttask.utils.database.tablecreation.createOneCallTable
 import com.el_nico.cappasitytesttask.utils.database.tablecreation.createWeatherTable
@@ -33,14 +32,14 @@ class WeatherDatabase {
         /**
          * Инициализация БД с созданием БД и таблиц (если они еще не существуют в ФС)
          */
-        fun init(application: WeatherApplication): Single<Boolean> {
+        fun init(context: Context, config: String): Single<Boolean> {
             return Single.create {
                 Executors.newSingleThreadExecutor().execute {
-                    val dbFile = createWeatherDatabaseFile(application)
+                    val dbFile = createWeatherDatabaseFile(context)
                     weatherDatabase = SQLiteDatabase.openOrCreateDatabase(dbFile,null)
 
                     if (!tableExists("SAVED_CITIES")) {
-                        setupHistoryTable(application)
+                        setupHistoryTable(config)
                     }
 
                     if (!tableExists("WEATHER")) {
@@ -85,7 +84,7 @@ class WeatherDatabase {
             return tableExists
         }
 
-        private fun setupHistoryTable(application: WeatherApplication) {
+        private fun setupHistoryTable(config: String) {
             weatherDatabase.execSQL(
                 "CREATE TABLE SAVED_CITIES(" +
                         "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -95,8 +94,7 @@ class WeatherDatabase {
                         ")"
             )
 
-            val configContents = application.readConfigFile()
-            val configJSON = JSONObject(configContents)
+            val configJSON = JSONObject(config)
 
             if (configJSON.has("default_locations")) {
                 val defaultLocations = configJSON.getJSONArray("default_locations")

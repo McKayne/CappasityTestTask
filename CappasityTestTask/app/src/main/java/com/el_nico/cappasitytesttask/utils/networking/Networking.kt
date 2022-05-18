@@ -1,6 +1,5 @@
 package com.el_nico.cappasitytesttask.utils.networking
 
-import com.el_nico.cappasitytesttask.application.WeatherApplication
 import com.el_nico.cappasitytesttask.interfaces.networking.RequestType
 import io.reactivex.rxjava3.schedulers.Schedulers
 import okhttp3.OkHttpClient
@@ -25,8 +24,8 @@ class Networking {
 
         internal var apiKey: String? = null
 
-        fun init(application: WeatherApplication) {
-            setupApiKey(application)
+        fun init(config: String) {
+            setupApiKey(config)
 
             val rxAdapter = RxJava3CallAdapterFactory
                 .createWithScheduler(Schedulers.io())
@@ -48,9 +47,8 @@ class Networking {
             requestType = retrofit.create(RequestType::class.java)
         }
 
-        private fun setupApiKey(application: WeatherApplication) {
-            val configContents = application.readConfigFile()
-            val configJSON = JSONObject(configContents)
+        private fun setupApiKey(config: String) {
+            val configJSON = JSONObject(config)
 
             if (configJSON.has("openweathermap_api_key")) {
                 apiKey = configJSON.getString("openweathermap_api_key")

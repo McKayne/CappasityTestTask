@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.el_nico.cappasitytesttask.fragments.cityselection.CitySelectionFragment"
+        android:name="com.el_nico.cappasitytesttask.ui.cityselection.CitySelectionFragment"
         android:label="@string/select_city_fragment_label"
         tools:layout="@layout/fragment_city_selection">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.el_nico.cappasitytesttask.fragments.weatherdetails.WeatherDetailsFragment"
+        android:name="com.el_nico.cappasitytesttask.ui.weatherdetails.WeatherDetailsFragment"
         tools:layout="@layout/fragment_weather_details">
 
         <action

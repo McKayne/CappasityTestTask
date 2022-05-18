@@ -3,7 +3,7 @@ package com.el_nico.cappasitytesttask.utils.networking
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import com.el_nico.cappasitytesttask.interfaces.networking.ImageRequestType
-import com.el_nico.cappasitytesttask.models.networking.ImageLinkResponse
+import com.el_nico.cappasitytesttask.domain.entity.networking.ImageLinkResponse
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
 import okhttp3.OkHttpClient

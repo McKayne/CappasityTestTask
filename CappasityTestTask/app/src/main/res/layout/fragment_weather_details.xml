@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.weatherdetails.WeatherDetailsFragment">
+    tools:context=".ui.weatherdetails.WeatherDetailsFragment">
 
     <data>
         <variable
             name="WeatherDetailsViewModel"
-            type="com.el_nico.cappasitytesttask.viewmodels.WeatherDetailsViewModel" />
+            type="com.el_nico.cappasitytesttask.ui.weatherdetails.WeatherDetailsViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

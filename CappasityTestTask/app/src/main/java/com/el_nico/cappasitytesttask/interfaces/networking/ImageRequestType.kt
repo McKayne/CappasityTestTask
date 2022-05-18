@@ -1,7 +1,6 @@
 package com.el_nico.cappasitytesttask.interfaces.networking
 
-import com.el_nico.cappasitytesttask.models.networking.ImageLinkResponse
-import com.el_nico.cappasitytesttask.models.networking.weather.WeatherResponse
+import com.el_nico.cappasitytesttask.domain.entity.networking.ImageLinkResponse
 import io.reactivex.rxjava3.core.Single
 import okhttp3.ResponseBody
 import retrofit2.Call
